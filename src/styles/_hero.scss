@@ -1,0 +1,39 @@
+.hero{
+    padding-top:90px;
+    padding-bottom: 100px;
+    background-image: url('../img/bridge-4441037_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover ;
+    position: relative;
+    
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.7;
+
+    }
+    &__text{
+        max-width: 33%;
+        margin-top: 90px;
+        
+        
+        font-size: 40px;
+        line-height: 56px;
+        font-weight: 800;
+
+    }
+
+
+}

@@ -1,0 +1,44 @@
+.infos-bar{
+    font-size: 35px;
+    font-weight: 500;
+    
+    
+    &__infos{
+        
+        &__item{
+            padding: 30px;  
+            display: flex;
+            text-align: center;
+            
+
+            .icons{
+                width: 35px;
+                height: 37px;
+                margin-right: 8px;
+                
+            }
+            .check{
+                margin-left:5px ;
+            }
+            .carregando{
+                width: 30px;
+                height: 30px;
+                background-color: transparent;
+                border: 5px solid cadetblue;
+                border-top:5px solid transparent ;
+                border-radius:50% ;
+
+                animation: loading 1s linear infinite;
+            }
+
+            @keyframes loading{
+                0%{
+                    transform: rotate(0deg);
+                }
+                100%{
+                    transform:rotate(360deg);
+                }
+            }
+        }
+    }
+}
